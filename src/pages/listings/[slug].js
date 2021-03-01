@@ -4,6 +4,8 @@ import Image from "next/image";
 import { API_URL, fromImageToUrl } from "../../utils/urls";
 
 const Listing = ({ listing }) => {
+  if (!listing) return <div>404</div>;
+
   return (
     <>
       <section style={{ width: "100%", background: "#000" }}>
@@ -115,7 +117,7 @@ export async function getStaticPaths() {
     paths: listings.map((listing) => ({
       params: { slug: listing.slug },
     })),
-    fallback: false,
+    fallback: true,
   };
 }
 

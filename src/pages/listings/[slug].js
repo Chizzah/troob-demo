@@ -16,7 +16,7 @@ const Listing = ({ listing }) => {
             <h1
               style={{
                 padding: "2rem",
-                fontSize: "3rem",
+                fontSize: "3.5rem",
                 color: "salmon",
               }}
             >

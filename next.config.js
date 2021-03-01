@@ -3,6 +3,6 @@ module.exports = {
     NEXT_PUBLIC_API_URL: process.env.NEXT_PUBLIC_API_URL,
   },
   images: {
-    domains: ["localhost", "troob-heroku-backend"],
+    domains: ["localhost", "troob-heroku-backend.herokuapp.com"],
   },
 };

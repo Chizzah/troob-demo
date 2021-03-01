@@ -107,8 +107,8 @@ const Listing = ({ listing }) => {
 };
 
 export async function getStaticPaths() {
-  // const res = await fetch(`${API_URL}/listings`);
-  const res = await fetch("http://localhost:1337/listings");
+  const res = await fetch(`${API_URL}/listings`);
+  // const res = await fetch("http://localhost:1337/listings");
   const listings = await res.json();
 
   return {
